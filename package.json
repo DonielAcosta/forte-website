@@ -1,7 +1,27 @@
 {
   "name": "forte-website",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Sitio web profesional para FORTE Ingeniería Manufactura - Contenedores Anti-Fauna",
   "private": true,
+  "keywords": [
+    "forte",
+    "ingenieria",
+    "manufactura",
+    "contenedores",
+    "anti-fauna",
+    "react",
+    "tailwindcss"
+  ],
+  "author": "FORTE Ingeniería Manufactura",
+  "license": "MIT",
+  "homepage": "https://forte-ingenieria.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/forte-ingenieria/website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/forte-ingenieria/website/issues"
+  },
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -16,8 +36,27 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:prod": "NODE_ENV=production react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
+    "test:ci": "react-scripts test --coverage --watchAll=false --ci",
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .js,.jsx --fix",
+    "lint:check": "eslint src --ext .js,.jsx",
+    "format": "prettier --write src/**/*.{js,jsx,json,css,md}",
+    "format:check": "prettier --check src/**/*.{js,jsx,json,css,md}",
+    "analyze": "npm run build && npx bundle-analyzer build/static/js/*.js",
+    "preview": "npx serve -s build -l 3000",
+    "clean": "rm -rf build node_modules package-lock.json",
+    "reinstall": "npm run clean && npm install",
+    "dev": "npm start",
+    "type-check": "echo 'Type checking not configured for JavaScript project'",
+    "security:audit": "npm audit",
+    "security:fix": "npm audit fix",
+    "deps:update": "npm update",
+    "deps:outdated": "npm outdated",
+    "size": "npm run build && du -sh build/",
+    "validate": "npm run lint:check && npm run format:check && npm run test:ci"
   },
   "eslintConfig": {
     "extends": [
@@ -38,8 +77,22 @@
     ]
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.19",
     "autoprefixer": "^10.4.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.0",
     "postcss": "^8.4.0",
+    "prettier": "^3.6.2",
     "tailwindcss": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
   }
 }
