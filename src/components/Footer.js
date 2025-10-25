@@ -3,8 +3,13 @@ const Footer = () => {
     <footer className="bg-slate-950 text-neutral-400 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="flex items-center justify-center space-x-3 mb-4">
-          <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center font-bold">
-            F
+          {/* Logo PNG Oficial */}
+          <div className="h-10 flex-shrink-0">
+            <img
+              src="/forte-logo.png"
+              alt="FORTE INGENIERIA MANUFACTURA"
+              className="h-full w-auto object-contain"
+            />
           </div>
           <div className="text-left">
             <div className="text-white font-bold">FORTE</div>

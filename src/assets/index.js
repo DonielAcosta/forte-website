@@ -4,7 +4,7 @@
 
 // Rutas de imágenes
 export const imagePaths = {
-  logo: '/assets/images/logo.png',
+  logo: '/src/assets/images/FORTE_Ingenieria_Manufactura.svg',
   logoWhite: '/assets/images/logo-white.png',
   hero: '/assets/images/hero-bg.jpg',
   product1: '/assets/images/product-200l.jpg',
