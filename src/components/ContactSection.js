@@ -13,8 +13,9 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          <div className="space-y-6">
+        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="lg:col-span-2">
+            <div className="grid md:grid-cols-2 gap-6">
             {/* WhatsApp */}
             <div className="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors">
               <div className="flex items-center space-x-4">
@@ -104,8 +105,8 @@ const ContactSection = () => {
             <div className="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors">
               <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0">
-                  <SocialIcon 
-                    network="instagram" 
+                  <SocialIcon
+                    network="instagram"
                     style={{ height: 40, width: 40 }}
                     bgColor="#E4405F"
                     fgColor="#ffffff"
@@ -125,9 +126,11 @@ const ContactSection = () => {
                 </div>
               </div>
             </div>
+            </div>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl p-8">
+          <div className="lg:col-span-1">
+            <div className="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl p-8 h-full">
             <h3 className="text-2xl font-bold mb-4">Certificaciones</h3>
             <ul className="space-y-3">
               {certifications.map((cert, idx) => (
@@ -137,6 +140,7 @@ const ContactSection = () => {
                 </li>
               ))}
             </ul>
+            </div>
           </div>
         </div>
       </div>
