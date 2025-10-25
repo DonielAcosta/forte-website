@@ -61,7 +61,7 @@ export const values = [
 export const contactInfo = {
   email: 'forte.ingenieria.manufactura@gmail.com',
   phone: '+52 81 3553 6847',
-  location: 'Norte de México'
+  location: 'Monterrey, Nuevo León'
 };
 
 // Certificaciones

@@ -88,7 +88,7 @@ const ContactSection = () => {
                 <div className="flex-1">
                   <h3 className="font-bold text-xl mb-2 text-orange-400">Ubicación</h3>
                   <a
-                    href="https://maps.google.com/?q=Norte+de+México"
+                    href="https://maps.google.com/?q=Monterrey+Nuevo+León+México"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-neutral-300 hover:text-orange-400 transition-colors"
@@ -96,6 +96,32 @@ const ContactSection = () => {
                     {contactInfo.location}
                   </a>
                   <p className="text-sm text-neutral-400 mt-1">Ver en Google Maps</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Instagram */}
+            <div className="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors">
+              <div className="flex items-center space-x-4">
+                <div className="flex-shrink-0">
+                  <SocialIcon 
+                    network="instagram" 
+                    style={{ height: 40, width: 40 }}
+                    bgColor="#E4405F"
+                    fgColor="#ffffff"
+                  />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-bold text-xl mb-2 text-pink-400">Instagram</h3>
+                  <a
+                    href="https://instagram.com/forte.contenedores"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-neutral-300 hover:text-pink-400 transition-colors text-lg font-medium"
+                  >
+                    @forte.contenedores
+                  </a>
+                  <p className="text-sm text-neutral-400 mt-1">Síguenos para ver nuestros productos</p>
                 </div>
               </div>
             </div>
