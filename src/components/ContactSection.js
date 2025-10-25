@@ -19,8 +19,8 @@ const ContactSection = () => {
             <div className="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors">
               <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0">
-                  <SocialIcon 
-                    network="whatsapp" 
+                  <SocialIcon
+                    network="whatsapp"
                     style={{ height: 40, width: 40 }}
                     bgColor="#25D366"
                     fgColor="#ffffff"
@@ -29,12 +29,12 @@ const ContactSection = () => {
                 <div className="flex-1">
                   <h3 className="font-bold text-xl mb-2 text-green-400">WhatsApp</h3>
                   <a
-                    href="https://api.whatsapp.com/send/?phone=584123033034&text=Saludos%21%20Me%20interesa%20conocer%20más%20sobre%20sus%20contenedores%20anti-fauna&type=phone_number&app_absent=0"
+                    href="https://api.whatsapp.com/send/?phone=528135536847&text=Saludos%21%20Me%20interesa%20conocer%20más%20sobre%20sus%20contenedores%20anti-fauna&type=phone_number&app_absent=0"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-neutral-300 hover:text-green-400 transition-colors text-lg font-medium"
                   >
-                    +58 412 303 3034
+                    +52 81 3553 6847
                   </a>
                   <p className="text-sm text-neutral-400 mt-1">Respuesta inmediata</p>
                 </div>
