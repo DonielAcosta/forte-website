@@ -60,7 +60,7 @@ export const values = [
 // Información de contacto
 export const contactInfo = {
   email: 'forte.ingenieria.manufactura@gmail.com',
-  phone: '844 122 0497',
+  phone: '+52 81 3553 6847',
   location: 'Norte de México'
 };
 

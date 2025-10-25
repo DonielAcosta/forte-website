@@ -1,4 +1,5 @@
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Mail, MapPin, Phone } from 'lucide-react';
+import { SocialIcon } from 'react-social-icons';
 import { contactInfo, certifications } from '../constants';
 
 const ContactSection = () => {
@@ -14,27 +15,89 @@ const ContactSection = () => {
 
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <div className="space-y-6">
-            <div className="bg-slate-800 rounded-lg p-6">
-              <h3 className="font-bold text-xl mb-2 text-cyan-400">Email</h3>
-              <a
-                href={`mailto:${contactInfo.email}`}
-                className="text-neutral-300 hover:text-white transition-colors"
-              >
-                {contactInfo.email}
-              </a>
+            {/* WhatsApp */}
+            <div className="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors">
+              <div className="flex items-center space-x-4">
+                <div className="flex-shrink-0">
+                  <SocialIcon 
+                    network="whatsapp" 
+                    style={{ height: 40, width: 40 }}
+                    bgColor="#25D366"
+                    fgColor="#ffffff"
+                  />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-bold text-xl mb-2 text-green-400">WhatsApp</h3>
+                  <a
+                    href="https://api.whatsapp.com/send/?phone=584123033034&text=Saludos%21%20Me%20interesa%20conocer%20más%20sobre%20sus%20contenedores%20anti-fauna&type=phone_number&app_absent=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-neutral-300 hover:text-green-400 transition-colors text-lg font-medium"
+                  >
+                    +58 412 303 3034
+                  </a>
+                  <p className="text-sm text-neutral-400 mt-1">Respuesta inmediata</p>
+                </div>
+              </div>
             </div>
-            <div className="bg-slate-800 rounded-lg p-6">
-              <h3 className="font-bold text-xl mb-2 text-cyan-400">Teléfono</h3>
-              <a
-                href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}
-                className="text-neutral-300 hover:text-white transition-colors text-2xl"
-              >
-                {contactInfo.phone}
-              </a>
+
+            {/* Email */}
+            <div className="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors">
+              <div className="flex items-center space-x-4">
+                <div className="flex-shrink-0">
+                  <Mail className="w-10 h-10 text-cyan-400" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-bold text-xl mb-2 text-cyan-400">Email</h3>
+                  <a
+                    href={`mailto:${contactInfo.email}?subject=Consulta%20sobre%20Contenedores%20Anti-Fauna&body=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20productos.%20Gracias.`}
+                    className="text-neutral-300 hover:text-cyan-400 transition-colors break-all"
+                  >
+                    {contactInfo.email}
+                  </a>
+                  <p className="text-sm text-neutral-400 mt-1">Respuesta en 24 horas</p>
+                </div>
+              </div>
             </div>
-            <div className="bg-slate-800 rounded-lg p-6">
-              <h3 className="font-bold text-xl mb-2 text-cyan-400">Ubicación</h3>
-              <p className="text-neutral-300">{contactInfo.location}</p>
+
+            {/* Teléfono */}
+            <div className="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors">
+              <div className="flex items-center space-x-4">
+                <div className="flex-shrink-0">
+                  <Phone className="w-10 h-10 text-blue-400" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-bold text-xl mb-2 text-blue-400">Teléfono</h3>
+                  <a
+                    href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}
+                    className="text-neutral-300 hover:text-blue-400 transition-colors text-lg font-medium"
+                  >
+                    {contactInfo.phone}
+                  </a>
+                  <p className="text-sm text-neutral-400 mt-1">Lunes a Viernes 8:00 - 18:00</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Ubicación */}
+            <div className="bg-slate-800 rounded-lg p-6 hover:bg-slate-700 transition-colors">
+              <div className="flex items-center space-x-4">
+                <div className="flex-shrink-0">
+                  <MapPin className="w-10 h-10 text-orange-400" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-bold text-xl mb-2 text-orange-400">Ubicación</h3>
+                  <a
+                    href="https://maps.google.com/?q=Norte+de+México"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-neutral-300 hover:text-orange-400 transition-colors"
+                  >
+                    {contactInfo.location}
+                  </a>
+                  <p className="text-sm text-neutral-400 mt-1">Ver en Google Maps</p>
+                </div>
+              </div>
             </div>
           </div>
 
