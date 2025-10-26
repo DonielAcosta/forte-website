@@ -133,8 +133,8 @@ const ContactSection = () => {
             <div className="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl p-8 h-full">
             <h3 className="text-2xl font-bold mb-4">Certificaciones</h3>
             <ul className="space-y-3">
-              {certifications.map((cert, idx) => (
-                <li key={idx} className="flex items-start space-x-2">
+              {certifications.map((cert) => (
+                <li key={cert} className="flex items-start space-x-2">
                   <ChevronDown className="w-5 h-5 flex-shrink-0 rotate-[-90deg]" />
                   <span>{cert}</span>
                 </li>
