@@ -26,9 +26,19 @@ const ProductsSection = ({ onProductClick }) => {
               aria-label={`Ver detalles del contenedor ${product.model} de ${product.volume}`}
               className="bg-neutral-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-neutral-200 hover:border-blue-600 cursor-pointer transform hover:scale-105"
             >
-              <div className="bg-blue-600 text-white rounded-lg p-4 mb-6 text-center">
-                <div className="text-3xl font-bold">{product.volume}</div>
-                <div className="text-sm opacity-90">{product.model}</div>
+              <div className="bg-blue-600 text-white rounded-lg p-4 mb-6 flex items-center justify-between">
+                <div className="text-center flex-1">
+                  <div className="text-3xl font-bold">{product.volume}</div>
+                  <div className="text-sm opacity-90">{product.model}</div>
+                </div>
+                {/* Imagen del contenedor sin fondo */}
+                <div className="flex justify-center">
+                  <img
+                    src={product.image}
+                    alt={`Contenedor ${product.model}`}
+                    className="h-32 w-auto object-contain"
+                  />
+                </div>
               </div>
               <ul className="space-y-3">
                 {product.features.map((feature) => (

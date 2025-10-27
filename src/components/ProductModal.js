@@ -61,7 +61,7 @@ const ProductModal = ({ isOpen, onClose, product }) => {
                 {/* Product Image */}
                 <div className="mb-8">
                   {/* Image Container with Color Overlay */}
-                  <div className="relative bg-white modal-padding rounded-xl shadow-lg overflow-hidden">
+                  <div className="relative modal-padding overflow-hidden">
                     <img
                       src={product.image}
                       alt={`${product.model} - Contenedor Anti-Fauna`}
@@ -77,7 +77,7 @@ const ProductModal = ({ isOpen, onClose, product }) => {
                       style={{
                         backgroundColor: selectedColor,
                         mixBlendMode: 'color',
-                        opacity: 0.95,
+                        opacity: 0.3,
                       }}
                     />
                     <div
