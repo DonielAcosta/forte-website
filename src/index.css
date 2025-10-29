@@ -97,5 +97,14 @@ html::after,
 
 /* Padding específico para modales */
 .modal-padding {
-  padding: 3rem !important;
+  padding: 4rem !important;
 }
+
+/* Altura específica para imágenes del modal
+
+.h-72 {
+  height: 20rem !important;
+}
+
+
+*/

@@ -3,9 +3,9 @@ export const products = [
   {
     model: 'CAF-200-1',
     volume: '200L',
-    features: ['Sistema contra osos', 'Soldadura AWS D1.3', 'NAE-SMA-009-2024'],
-    image: '/contenedor-antifauna-200.webp',
-    modalImage: '/contenedor-antifauna-200.webp',
+    features: ['Sistema contra osos', 'Soldadura AWS D1.3', 'NAE-SMA-009-2024', 'Diseño personalizado'],
+    image: '/200l.png',
+    modalImage: '/200l.png',
     price: 31320,
     specifications: [
       { label: 'Volumen Interior', value: '200 Litros' },
@@ -26,9 +26,9 @@ export const products = [
   {
     model: 'CAF-400-1',
     volume: '400L',
-    features: ['Sistema contra osos', 'Soldadura AWS D1.3', 'NAE-SMA-009-2024'],
-    image: '/contenedor-antifauna-400.webp',
-    modalImage: '/contenedor-antifauna-400.webp',
+    features: ['Sistema contra osos', 'Soldadura AWS D1.3', 'NAE-SMA-009-2024', 'Diseño personalizado'],
+    image: '/400l.png',
+    modalImage: '/400l.png',
     price: 42000,
     specifications: [
       { label: 'Volumen Interior', value: '400 Litros' },
@@ -52,9 +52,10 @@ export const products = [
   {
     model: 'CAF-6000-1',
     volume: '6,000L',
-    features: ['Sistema contra osos', 'Soldadura AWS D1.3', 'NAE-SMA-009-2024', 'Multi-compartimento'],
-    image: '/contenedor-antifauna-6000.webp',
+    features: ['Sistema contra osos', 'Soldadura AWS D1.3', 'NAE-SMA-009-2024', 'Multi-compartimento','Diseño personalizado'],
+    image: '/descarga1.png',
     modalImage: '/contenedor-antifauna-6000.webp',
+
     price: 53875,
     specifications: [
       { label: 'Volumen Interior', value: '6,000 Litros' },

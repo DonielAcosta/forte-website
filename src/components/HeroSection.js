@@ -1,4 +1,4 @@
-import { Shield, Award, Leaf } from 'lucide-react';
+import { Shield, Award, Leaf, Palette } from 'lucide-react';
 
 const HeroSection = ({ scrollToSection }) => {
   return (
@@ -43,6 +43,10 @@ const HeroSection = ({ scrollToSection }) => {
                 <div className="flex items-center space-x-3">
                   <Leaf className="w-8 h-8 text-green-400" />
                   <span className="text-lg">NAE-SMA-009-2024</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Palette className="w-8 h-8 text-purple-400" />
+                  <span className="text-lg">Diseño personalizado</span>
                 </div>
               </div>
             </div>

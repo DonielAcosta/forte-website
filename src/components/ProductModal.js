@@ -65,7 +65,7 @@ const ProductModal = ({ isOpen, onClose, product }) => {
                     <img
                       src={product.image}
                       alt={`${product.model} - Contenedor Anti-Fauna`}
-                      className="relative w-full h-72 object-cover rounded-lg z-10"
+                      className="relative w-full h-96 object-contain rounded-lg z-10"
                       onError={(e) => {
                         e.target.style.display = 'none';
                         e.target.nextSibling.style.display = 'block';
@@ -130,6 +130,35 @@ const ProductModal = ({ isOpen, onClose, product }) => {
                       <span className="text-gray-700 text-lg font-medium">{feature}</span>
                     </div>
                   ))}
+                </div>
+
+                {/* Diseño Personalizado */}
+                <div className="mt-8 bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl shadow-lg border border-blue-200">
+                  <h4 className="text-lg font-bold text-blue-900 mb-4 flex items-center">
+                    <Shield className="w-5 h-5 mr-2 text-blue-600" />
+                    Diseño Personalizado
+                  </h4>
+                  <ul className="space-y-3">
+                    <li className="flex items-center text-gray-700">
+                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                      <span className="text-base">Rotulación personalizada</span>
+                    </li>
+                    <li className="flex items-center text-gray-700">
+                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                      <span className="text-base">Logotipo corporativo</span>
+                    </li>
+                    <li className="flex items-center text-gray-700">
+                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                      <span className="text-base">Colores a elegir</span>
+                    </li>
+                    <li className="flex items-center text-gray-700">
+                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                      <span className="text-base">Texto personalizado</span>
+                    </li>
+                  </ul>
+                  <p className="mt-4 text-sm text-gray-600 italic">
+                    Personaliza tu contenedor según tus necesidades de identificación y marca.
+                  </p>
                 </div>
 
 
