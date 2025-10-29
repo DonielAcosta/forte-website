@@ -15,6 +15,7 @@ Sitio web profesional para FORTE Ingeniería Manufactura, especializada en la fa
 - **Accesibilidad**: Cumple con estándares de accesibilidad web
 - **Modal de Productos**: Ventana emergente con detalles completos de cada contenedor
 - **Selector de Colores**: Visualiza los contenedores en diferentes colores
+- **Diseño Personalizado**: Opciones de personalización con rotulación, logotipo y texto
 - **Descarga de Catálogo**: Descarga el catálogo completo en PDF
 
 ## 🛠️ Tecnologías
@@ -156,6 +157,12 @@ Componente de logo clicable que navega al inicio.
 ### HeroSection
 Sección principal con información destacada y call-to-action.
 
+**Características destacadas:**
+- Sistema a prueba de osos
+- Soldadura AWS D1.3
+- NAE-SMA-009-2024
+- Diseño personalizado
+
 **Props:**
 - `scrollToSection`: Función para hacer scroll a una sección
 
@@ -178,6 +185,11 @@ Modal que muestra detalles completos del producto seleccionado.
 - Selector de 6 colores (Azul, Gris, Naranja, Negro, Rojo, Verde)
 - Especificaciones técnicas completas
 - Características principales y certificaciones
+- Sección de Diseño Personalizado con opciones de personalización:
+  - Rotulación personalizada
+  - Logotipo corporativo
+  - Colores a elegir
+  - Texto personalizado
 
 ### CatalogSection
 Sección de descarga del catálogo en PDF.
@@ -338,6 +350,7 @@ Todos los contenedores incluyen:
 - Recubrimiento: Pintura Anticorrosiva
 - Sistema de Cierre: Solo mano humana
 - Certificaciones: Soldadura AWS D1.3, NAE-SMA-009-2024
+- Diseño Personalizado: Con opciones de rotulación, logotipo corporativo, colores y texto
 
 ## 📄 Catálogo
 
@@ -363,3 +376,5 @@ El catálogo completo está disponible para descarga en formato PDF:
 ---
 
 **Desarrollado con ❤️ para FORTE Ingeniería Manufactura**
+
+**Autor:** Doniel Acosta
