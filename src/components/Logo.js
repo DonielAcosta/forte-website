@@ -28,6 +28,8 @@ const Logo = ({ className = "", showText = true, size = "md", onClick }) => {
           src="/forte-logo.png"
           alt="FORTE INGENIERIA MANUFACTURA"
           className="h-full w-auto object-contain"
+          decoding="async"
+          fetchPriority="high"
         />
       </div>
 

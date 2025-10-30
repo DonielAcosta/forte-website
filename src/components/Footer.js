@@ -8,7 +8,9 @@ const Footer = () => {
             <img
               src="/forte-logo.png"
               alt="FORTE INGENIERIA MANUFACTURA"
-              className="h-full w-auto object-contain"
+            className="h-full w-auto object-contain"
+            loading="lazy"
+            decoding="async"
             />
           </div>
           <div className="text-left">

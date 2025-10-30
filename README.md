@@ -18,6 +18,25 @@ Sitio web profesional para FORTE Ingeniería Manufactura, especializada en la fa
 - **Diseño Personalizado**: Opciones de personalización con rotulación, logotipo y texto
 - **Descarga de Catálogo**: Descarga el catálogo completo en PDF
 
+## ⚡ Optimización de Imágenes
+
+Se aplicaron mejoras para acelerar el renderizado y el LCP:
+
+- `loading="lazy"` en imágenes no críticas para diferir su carga.
+- `decoding="async"` para decodificar sin bloquear el hilo principal.
+- `fetchPriority="high"` en imágenes críticas de primer pantallazo.
+
+Ubicaciones relevantes:
+- `src/components/Logo.js` → `fetchPriority="high"`, `decoding="async"`.
+- `src/components/ProductModal.js` → `fetchPriority="high"`, `decoding="async"`.
+- `src/components/ProductsSection.js` → `loading="lazy"`, `decoding="async"`.
+- `src/components/Footer.js` → `loading="lazy"`, `decoding="async"`.
+
+Recomendaciones adicionales (opcionales):
+- Convertir imágenes a WebP/AVIF y servir variantes con `srcSet`/`sizes`.
+- Definir `width` y `height` cuando sea posible para evitar CLS.
+- Comprimir assets en `public/` antes del build.
+
 ## 🛠️ Tecnologías
 
 - **React 19**: Biblioteca de interfaz de usuario

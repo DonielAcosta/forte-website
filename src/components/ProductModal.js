@@ -66,6 +66,8 @@ const ProductModal = ({ isOpen, onClose, product }) => {
                       src={product.image}
                       alt={`${product.model} - Contenedor Anti-Fauna`}
                       className="relative w-full h-96 object-contain rounded-lg z-10"
+                      decoding="async"
+                      fetchPriority="high"
                       onError={(e) => {
                         e.target.style.display = 'none';
                         e.target.nextSibling.style.display = 'block';

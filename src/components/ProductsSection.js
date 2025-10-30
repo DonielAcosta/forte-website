@@ -37,6 +37,8 @@ const ProductsSection = ({ onProductClick }) => {
                     src={product.image}
                     alt={`Contenedor ${product.model}`}
                     className="h-32 w-auto object-contain"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
               </div>
